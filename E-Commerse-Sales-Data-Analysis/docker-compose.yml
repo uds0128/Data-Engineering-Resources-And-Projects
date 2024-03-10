@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  node:
+    image: node:1
+    build: .
+    volumes:
+      - './Data:/src/Data'
+    ports:
+      - 8090:8090
