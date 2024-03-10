@@ -5,6 +5,7 @@ services:
     image: node:1
     build: .
     volumes:
-      - './Data:/src/Data'
+      - './src:/src'
     ports:
       - 8090:8090
+      - 4040:4040
